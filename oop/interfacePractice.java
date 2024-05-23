@@ -1,12 +1,13 @@
 package oop;
 
 // interface is used to acheive the multiple inheritance
-interface Animal{
+interface animal{
 	public void walk();
+	public int num=0;
 	
 }
 
-class deer implements Animal{
+class deer implements animal{
 
 	@Override
 	public void walk() {
@@ -16,7 +17,7 @@ class deer implements Animal{
 	}
 	
 }
-class chicken implements Animal{
+class chicken implements animal{
 
 	@Override
 	public void walk() {

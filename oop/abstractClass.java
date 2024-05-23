@@ -2,6 +2,7 @@ package oop;
 
 abstract class shape {
     public abstract double area(); 
+    public int num=0;
     public void display() {
         System.out.println("This is awesome display");
     }
