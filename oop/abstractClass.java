@@ -9,7 +9,7 @@ abstract class shape {
 }
 
 class Circle extends shape {
-    final double PI = Math.PI;
+    final double PI = 3.14;
     int radius = 2;
 
     @Override

@@ -1,13 +1,14 @@
 package oop;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.ArrayDeque;
 
+public class HelloWorld {	
 
-public class HelloWorld {
-    public static void main(String[] args) {
-      
-    }
+	public static void main(String[] args) {
+		ArrayDeque<String> nameStack=new ArrayDeque<>();
+		nameStack.offer("dahit");
+		
+	System.out.println(nameStack.pop());
+		
+	}
 }
