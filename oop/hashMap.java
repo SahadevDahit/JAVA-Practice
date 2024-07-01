@@ -12,6 +12,7 @@ public class hashMap {
 		capitalCities.put("India","New Delhi");
 		capitalCities.put("America","Wasing ton dc");
 		capitalCities.put("China","Beijing");
+		capitalCities.put("America","Beijing");
 //		System.out.println(capitalCities.get("China"));
 		
 		// Hash set 

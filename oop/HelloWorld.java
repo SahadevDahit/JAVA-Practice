@@ -1,14 +1,15 @@
 package oop;
 
-import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.LinkedList;
 
-public class HelloWorld {	
-
-	public static void main(String[] args) {
-		ArrayDeque<String> nameStack=new ArrayDeque<>();
-		nameStack.offer("dahit");
-		
-	System.out.println(nameStack.pop());
-		
-	}
+public class HelloWorld{	
+  
+   	  public static void main(String[] args) {
+   		
+   		  
+		   
+	  }
 }
