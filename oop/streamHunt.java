@@ -29,7 +29,7 @@ public class streamHunt {
 //	    myList.stream().sorted((a,b)->a.compareTo(b)).forEach(System.out::println);
 	    
 	    // Sort string into the descending
-//	    myList.stream().sorted((a,b)->b.compareTo(a)).forEach(System.out::println);
+//	    myList.stream().sorted((a,b)->b.compareTo(a)).skip(1).forEach(System.out::println);
 	    
 	    
 		ArrayList<Integer> nums=new ArrayList<Integer>(Arrays.asList(98,67));
@@ -38,13 +38,35 @@ public class streamHunt {
 		nums.add(46);
 		nums.add(39);
 		nums.add(65);
+		nums.add(65);
+		
+		
+		// distinct elements
+		nums.stream().distinct().forEach(System.out::println);
+		
+		
+		// Sum of all the elements 
+		 int sum = nums.stream()
+                 .reduce(0, Integer::sum);
+		 
+		 // min value 
+		 int minValue = nums.stream()
+                 .min(Integer::compareTo)
+                 .orElse(0); // Default value if the stream is empty
+		 
+		 // max value
+		 int maxValue = nums.stream()
+                 .max(Integer::compareTo)
+                 .orElse(0); // Default value if the stream is empty
+		 
+		 System.out.println("Minimum value "+minValue);
+		 System.out.println("Maximum value "+maxValue);
+		 
 		
 		String[] array = {"John", "Tonny", "Jack", "Yuup", "X-zero"};
-         Stream.of(array).forEach(System.out::println);
-		
-		
+        		
 //	 List<Integer> filteredArray = nums.stream().map(x->x*2).filter(x->x>50).sorted((a,b)->a-b).collect(Collectors.toList());
-//		
+	
 //		System.out.println(filteredArray);
 //		
 		
@@ -59,6 +81,10 @@ public class streamHunt {
 		// Stream to generate the even values only
 //		 Stream.iterate(0, x->x+1).limit(20).filter(x->x%2==0).forEach(System.out::println);
 		
+		 
+		// Create a stream containing the collection itself as a single element
+		// Stream.of(myList).forEach(System.out::println);
+//		 Stream.of(12,34,78,49).forEach(System.out::println);
 
 	}
 
