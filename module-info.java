@@ -4,5 +4,5 @@
 /**
  * 
  */
-module oop {
+module javas {
 }
